@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce_supply_chain_monitor"
+version = "0.1.0"
+description = "Demo: E-Commerce Supply Chain & Fulfillment Monitor"
+readme = "README_PROJECT.md"
+requires-python = ">=3.8"
+dependencies = [
+    "boto3",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
